@@ -13,9 +13,16 @@ import android.provider.Settings;
 public class HelloGit {
 
     private String name;
+    private int age;
+
+    public HelloGit(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     public HelloGit(String name) {
         this.name = name;
+
     }
 
     public String getName() {
@@ -24,5 +31,13 @@ public class HelloGit {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
